@@ -57,6 +57,7 @@ PhantomJS is located at `/srv/bin/phantomjs` on your application server.
 ### Drupal PhantomJS Configuration
 
 Once you have downloaded and enabled the PhantomJS Capture module, the next step will be configuring the image toolkit settings. Navigate to the Image toolkit settings page at: `/admin/config/user-interface/phantomjs_capture` to specify the library path.
+
 **Path to phantomJS:** `/srv/bin/phantomjs`
 
 
