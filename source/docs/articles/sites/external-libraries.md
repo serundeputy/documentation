@@ -44,6 +44,7 @@ git add .
 git commit -m "Added WKHTMLtoPDF library"
 git push
 ```
+##Note: Enable the print_ui module to turn on the page widget. 
 
 ### WordPress
 Currently, there are no known plugins that implement WKHTMLtoPDF directly. However, you can use the converter by creating a custom plugin or by placing the code within your theme's `functions.php` file.
