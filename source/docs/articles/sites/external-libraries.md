@@ -35,7 +35,7 @@ WebKit HTML allows you to create a snapshot or capture the content of a web page
 WKHTMLtoPDF can be found on your application server at `/srv/bin/wkhtmltopdf`
 
 ### Drupal
-To install from your local Development environment:
+To install from your local Development environment, you'll need the Print module and to create a symlink to the hosted library into your site's libraries directory:
 ```bash
 drush dl print
 mkdir -p sites/all/libraries/wkhtmltopdf
@@ -54,6 +54,12 @@ In its own words, "PhantomJS is a headless WebKit with JavaScript API. It has fa
 
 PhantomJS is located at `/srv/bin/phantomjs` on your application server.
 
+### Drupal PhantomJS Configuration
+
+Once you have downloaded and enabled the PhantomJS Capture module, the next step will be configuring the image toolkit settings. Navigate to the Image toolkit settings page at: `/admin/config/user-interface/phantomjs_capture` to specify the library path.
+**Path to phantomJS:** `/srv/bin/phantomjs`
+
+
 ## [Apache Tika](http://tika.apache.org/)
 
 The Apache Tika™ toolkit detects and extracts metadata and structured text content from various documents using existing parser libraries.  
@@ -63,7 +69,7 @@ Tika can extract content from a number of document formats such as HTML, XML, M
 
 ### Drupal Tika Configuration
 
-Once you have downloaded and installed the Apache Tika module, the next step will be configuring the module's settings.
+Once you have downloaded and installed the ApacheSolr Attachments module (apachesolr_attachments), the next step will be configuring the module's settings.
 
 Navigate to the Tika settings page at: `/admin/config/search/apachesolr/attachments` and enter the fields as follows:
 
