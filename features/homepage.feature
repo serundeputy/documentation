@@ -22,4 +22,7 @@ Feature: Docs
   Scenario: Verify Contributor CTA button exists
     Given I am on the homepage
     When I follow "Required Reading"
-    And I find the element with ID "contrib-cta-btn"
+    And I press "Contribute to Docs"
+    Then I should see "Edit This Doc"
+    And I should see "Report Doc Issue"
+    And I should see "Suggest New Doc"
