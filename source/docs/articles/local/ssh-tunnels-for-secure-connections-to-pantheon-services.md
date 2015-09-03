@@ -67,9 +67,4 @@ ps -fU USERNAME | grep "ssh -f" | grep "PORT:" | awk '{print $2}' | xargs kill
 ```
 
 ## Troubleshooting
-### Lost Connection to MySQL Server
-`ERROR 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0`
-
-This error occurs when a request is sent to an idled database server. Pantheon containers spin down after ~1 hour of idle time. Live environments on a paid plan spin down after 12 hours of idle time. Environments usually spin up within 30 second of receiving a request. To resolve this error, wake idle environments by loading the home page or with the following Terminus command:
-
-`terminus site wake --site=<site-name> --env=<env>`
+To find solutions for MySQL connection errors, see [Accessing MySQL Databases](/docs/articles/local/accessing-mysql-databases/#troubleshooting-mysql-connections).
